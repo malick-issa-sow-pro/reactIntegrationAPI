@@ -1,0 +1,171 @@
+:root{
+  --gray: #cac0bb;
+  --black: #242424;
+  --indigo:#050822;
+  --blue:#8ed5ff;
+  --white: #e2e2e2;
+  --red:#ffa295;
+  --green:#aeffb9;
+}
+*, **before, **::after{
+  box-sizing: border-box !important;
+  -webkit-box-sizing: border-box !important;
+}
+html, body{margin:0;}
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0; font-size: 1rem;
+  width: 100%; height: auto;
+  background: var(--gray);
+  
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; height: 10vh;
+  background: var(--indigo);
+  color: var(--white);
+}
+.link{
+  text-decoration: none;
+  color: inherit;
+  font-size: 2rem;
+}
+#form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%; margin: 0 0 5rem;
+  height: max-content;
+}
+#description,#education, .education,#experience, .experience{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%
+}
+#experience, #education{
+  display: flex; flex-direction: column;
+  width: 100%;
+}
+
+#form label, button{
+  display: flex;
+  border-radius: 5px;
+  width: 90%; height: 2.3rem;
+  border: none; background: var(--white);
+  cursor: pointer;
+  margin: .5rem 0;
+  box-sizing: border-box;
+}
+#description .label.description{ height: 2.8rem;}
+.input{
+  width: 100%; height: 100%;
+  margin: 0; padding: 0 1rem;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.input.photo{display: none;}
+
+.label.photo{
+  color: var(--gray);
+  font-size: .9rem;
+  align-items: center;
+  padding: 0 1rem;
+}
+button{
+  justify-content: center;
+  align-items: center;
+  margin: .8rem 0;
+  font-size: 1.1rem;
+}
+button:hover{
+  filter:saturate(260%);
+}
+.Add.btn{background: var(--green);}
+.Remove.btn{background:var(--red)}
+.Print.btn{background:var(--blue)}
+/* CV form to print  */
+.ProfileImg{
+  width: 10rem; height: 10rem;
+  border-radius: 200px;
+  box-shadow:  0 0 10px black;
+  margin: 1rem 0;
+}
+#Cv-form{
+  box-sizing: border-box ;
+  display: flex; 
+  align-items: flex-start;
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-between;
+  width: 100%; height: 100vh;
+  min-width: 630px; overflow-x: auto;
+  background: var(--white);
+  color: var(--black);
+ 
+}
+.Cv{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align: left ;
+  width: 60%; height: 100%;
+  word-wrap: break-word;
+  box-sizing: inherit;
+}
+.Cv > section{
+  box-sizing: inherit;
+  width: 100%; 
+  align-items: flex-start;
+  padding: 1rem;
+}
+.Cv.Title{
+  height: 6rem; padding: 1rem 2rem;
+  align-items: flex-start;
+}
+.Cv.Personal{
+  width: 40%; 
+  background: var(--indigo);
+  color: var(--white);padding:1rem;
+  height: 100%;
+  box-sizing: border-box;
+}
+.CvEducation, .CvExperience{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 1rem; margin: 1rem 0;
+}
+.Cv h1,.Cv h2,.Cv h3,.Cv p {
+  margin: 0; 
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.Cv.Personal h3{justify-content: center;}
+.Cv > h1{font-size: 1.9rem;}
+.duration{font-weight: bolder;}
+
+svg{
+  width: 1.3rem; height: 1.3rem;
+  margin:.4rem;
+}
+ hr{
+  background: var(--black);
+  width: 90%;
+  height: 2px;
+  border: none;
+  margin: .8rem .6rem;
+}
+h2 hr{width: 50%;}
